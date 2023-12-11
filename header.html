@@ -1,0 +1,127 @@
+<div class="name_container">
+  <div class="header-greet"><p id="greeting"></p></div>
+  <div>
+    <div class="header-greet"><p id="time_greeting">-- --</p></div>
+    <div class="typing-name_container">
+      <h1>Hi,</h1>
+      <h1>I'm Amir Abbasy,</h1>
+      <h1>
+        <span
+          typing-speed="70"
+          typing-delay="1000"
+          words="blockchain dev,web3 developer,MERN stack dev"
+        ></span>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<style>
+  .header-greet {
+    font-size: 0.7em;
+    margin-left: 10%;
+    letter-spacing: 4px;
+  }
+
+  .name_container {
+    width: 100vw;
+    font-size: 1.52em;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .typing-name_container {
+    transform: translate(-100px, 50px);
+  }
+  .typing-name_container h1 {
+    font-weight: 600;
+    line-height: 1;
+  }
+  .name_container span {
+    /* color: red; */
+  }
+  .name_container span::after {
+    content: "|";
+    animation-name: blinking;
+    animation-duration: 0.71s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes blinking {
+    from {
+      color: transparent;
+    }
+    to {
+      color: lightgrey;
+    }
+  }
+</style>
+
+<script>
+  var wordsToType = $("span[words]").attr("words").split(","),
+    typer = $("span[words]"),
+    typingSpeed = parseInt(typer.attr("typing-speed")) || 70,
+    typingDelay = parseInt(typer.attr("typing-delay")) || 700;
+
+  var currentWordIndex = 0,
+    currentCharacterIndex = 0;
+
+  function type() {
+    var wordToType = wordsToType[currentWordIndex % wordsToType.length];
+
+    if (currentCharacterIndex < wordToType.length) {
+      typer.text(typer.text() + wordToType[currentCharacterIndex++]);
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(erase, typingDelay);
+    }
+  }
+
+  function erase() {
+    var wordToType = wordsToType[currentWordIndex % wordsToType.length];
+
+    if (currentCharacterIndex > 0) {
+      typer.text(wordToType.substr(0, --currentCharacterIndex - 1));
+      setTimeout(erase, typingSpeed);
+    } else {
+      currentWordIndex++;
+      setTimeout(type, typingDelay);
+    }
+  }
+
+  type();
+
+  const greetingMessage = getTimeGreeting();
+  const formattedTimeAndDate = getFormattedTimeAndDate();
+
+  $("#greeting").text(greetingMessage);
+  $('#time_greeting').text(formattedTimeAndDate)
+
+
+  function getTimeGreeting() {
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 5 && currentHour < 12) {
+      return "Good morning!";
+    } else if (currentHour >= 12 && currentHour < 18) {
+      return "Good afternoon!";
+    } else {
+      return "Good evening!";
+    }
+  }
+
+  function getFormattedTimeAndDate() {
+    const options = {
+      day: 'numeric',
+      month: 'short',
+      hour: 'numeric',
+      minute: '2-digit',
+    };
+
+    const now = new Date();
+    const dateString = now.toLocaleString('en-US', options);
+
+    return dateString.replace(',', ''); // Remove the comma after the day
+  }
+
+</script>

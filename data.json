@@ -1,0 +1,241 @@
+{
+    "experience": [
+        {
+            "role": "React-Native Developer",
+            "time": "FEB, 21",
+            "title": "E-commerce app",
+            "desc": "Designed and developed a full-fledged e-commerce mobile application using React Native, providing a seamless shopping experience for users across iOS and Android platforms. The app offers a wide range of products, user authentication, and secure payment processing.",
+            "stacks": [
+                "React-Native",
+                "Redux",
+                "Axios"
+            ]
+        },
+        {
+            "role": "React-Native Developer",
+            "time": "APR, 21",
+            "title": "MLM Mobile App",
+            "desc": "Led the redesign and maintenance efforts of a comprehensive MLM software system, optimizing user experience, and ensuring the reliability of critical functionalities.",
+            "stacks": [
+                "React-Native",
+                "Redux",
+                "Axios"
+            ]
+        },
+        {
+            "role": "React-Native Developer",
+            "time": "JUL, 21",
+            "title": "Custom Graph Component and Custom Bottom Tab Bar Component using SVG for React-Native App",
+            "desc": "Developed a custom graph component in React Native using SVG to fulfill specific project requirements and achieve UI conversion goals and custom Bottom Tab Bar component to meet specific project needs. Conducted performance optimization to ensure a responsive and efficient user experience. ",
+            "stacks": [
+                "React-Native",
+                "SVG",
+                "React-native Animation"
+            ]
+        },
+        {
+            "role": "React-Native Developer",
+            "time": "SEP, 21",
+            "title": "Rental service app",
+            "desc": "Developed a mobile application to simplify the process of finding and renting rooms for students, providing a convenient platform for both landlords and tenants. Integrated maps to provide a visual representation of property locations, helping students make informed decisions based on proximity to their institutions.",
+            "stacks": [
+                "React-Native",
+                "Redux",
+                "Axios",
+                "Google Map"
+            ]
+        },
+        {
+            "role": "React-Native Developer",
+            "time": "DEC, 21",
+            "title": "ID card scanning app",
+            "desc": " Developed an automated system that leverages AWS Rekognition for scanning ID cards, extracting email addresses, and sending targeted product advertisements via email.",
+            "stacks": [
+                "React-Native",
+                "Axios",
+                "AWS Rekognition"
+            ]
+        },
+        {
+            "role": "Blockchain Intern",
+            "time": "FEB, 22",
+            "title": "NFT Marketplace Demo",
+            "desc": "Developed a comprehensive NFT (Non-Fungible Token) marketplace demo showcasing the creation, buying, and selling of digital assets on a blockchain.  Implemented smart contracts for creating and managing NFTs on the Ethereum blockchain. and developed the frontend and backend of the marketplace, ensuring a seamless user experience. Integrated wallet functionality for users to securely store and manage their NFTs.",
+            "stacks": [
+                "React.js",
+                "Solidity",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "Web3",
+                "Wagmi",
+                "Mongo DB"
+            ]
+        },
+        {
+            "role": "Blockchain Intern",
+            "time": "JUN, 22",
+            "title": "Crypto Wallet Development",
+            "desc": "Engineered a secure and user-friendly crypto wallet for managing various cryptocurrencies and tokens. Integrated blockchain APIs to support multiple cryptocurrencies, providing users with a versatile wallet solution.  Implemented private key management and encryption for enhanced security.  Designed a user interface that allows for easy transaction monitoring, sending, and receiving of cryptocurrencies.",
+            "stacks": [
+                "Node.js",
+                "Express.js",
+                "EJS view engine",
+                "Ether.js",
+                "Chrome tools",
+                "MySql"
+            ]
+        },
+        {
+            "role": "Blockchain Intern",
+            "time": "AUG, 22",
+            "title": "Crypto Bots Development",
+            "desc": "Created automated crypto trading bots to execute predefined strategies on various cryptocurrency exchanges. Developed algorithmic trading strategies based on technical analysis and market indicators. Integrated the bots with cryptocurrency exchange APIs to execute buy and sell orders. Conducted backtesting to validate the effectiveness of the trading strategies.",
+            "stacks": [
+                "Python",
+                "TA-LIB Library",
+                "CCXT Library"
+            ]
+        },
+        {
+            "role": "Blockchain Developer",
+            "time": "NOV, 22",
+            "title": "Document Verification System with Web3 Storage and IPFS Integration",
+            "desc": "Engineered a document verification system that seamlessly integrates Web3 storage and IPFS for decentralized and secure storage of documents on the blockchain. Designed a decentralized application (DApp) allowing users to upload, verify, and access documents with seamless integration with Web3 storage and IPFS. Utilized smart contracts on the Ethereum blockchain to store document hashes and reference IPFS content identifiers.",
+            "stacks": [
+                "Web3 Storage",
+                "IPFS ",
+                "Ethereum",
+                "Solidity",
+                "Web3.js",
+                "Wagmi",
+                "Node.js",
+                "Express.js",
+                "OpenZeppelin",
+                "Mongo DB"
+            ]
+        },
+        {
+            "role": "Blockchain Developer",
+            "time": "FEB, 23",
+            "title": "React Crypto Pay-in Button Component",
+            "desc": "Developed a reusable React component for facilitating cryptocurrency payments within our company's service sites. The goal was to provide a seamless and user-friendly interface for developers to integrate cryptocurrency payments into our services.",
+            "stacks": [
+                "Web3.js"
+            ]
+        },
+        {
+            "role": "Blockchain Developer",
+            "time": "FEB, 23",
+            "title": "NFT Marketplace Project",
+            "desc": "Created automated crypto trading bots to execute predefined strategies on various cryptocurrency exchanges. Developed algorithmic trading strategies based on technical analysis and market indicators. Integrated the bots with cryptocurrency exchange APIs to execute buy and sell orders. Conducted backtesting to validate the effectiveness of the trading strategies.",
+            "stacks": [
+                "React.js",
+                "Solidity",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "IPFS",
+                "Wagmi",
+                "Mongo DB"
+            ]
+        },
+        {
+            "role": "Blockchain Developer",
+            "time": "MAY, 23",
+            "title": "NFT Marketplace Project",
+            "desc": "Created automated crypto trading bots to execute predefined strategies on various cryptocurrency exchanges. Developed algorithmic trading strategies based on technical analysis and market indicators. Integrated the bots with cryptocurrency exchange APIs to execute buy and sell orders. Conducted backtesting to validate the effectiveness of the trading strategies.",
+            "stacks": [
+                "React.js",
+                "Solidity",
+                "Next.js",
+                "Node.js",
+                "Express.js",
+                "IPFS",
+                "Wagmi",
+                "Mongo DB"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Jean",
+            "des": "NFT marketplace for client business logic",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "NFT Carbon War",
+            "des": "NFT marketplace for client business logic",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "Document Verification",
+            "des": "document verification system through blockchain technology for client business logic",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "NFT Marketplace Demo",
+            "des": "demo marketplace showcasing the creation, buying, and selling of digital assets on a blockchain",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "ID card scanning app",
+            "des": "ID card scanning app",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "Edumbus App",
+            "des": "Rental service app for students",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "MLM Mobile App",
+            "des": "Multi-level Marketing (MLM) Mobile App",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "DoCart",
+            "des": "E-store Mobile App",
+            "link": "",
+            "thumb": ""
+        },
+        {
+            "name": "Bisberry",
+            "des": "Product landing page",
+            "link": "https://bisberry.com/",
+            "thumb": ""
+        }
+    ],
+    "skills": [
+        "Solidity ",
+        "Web3 ",
+        "React js ",
+        "Node js ",
+        "Java Script ",
+        "Python ",
+        "Redux ",
+        "Typescript ",
+        "REST ",
+        "Android ",
+        "AWS ",
+        "Core Java ",
+        "HTML5 ",
+        "CSS3 ",
+        "jQuery ",
+        "Tailwind css ",
+        "Git ",
+        "Firebase ",
+        "SQL ",
+        "Mongo DB ",
+        "Docker ",
+        "Figma and Adobe Creative Suite ",
+        "Blender 3d"
+    ]
+}

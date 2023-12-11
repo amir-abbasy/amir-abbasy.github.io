@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amir Abbasy</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script>
+      $(function () {
+        $(".header").load("header.html");
+        $(".section_about").load("about.html");
+      });
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="typing-container">
+          <h1>
+            This typing effect is&nbsp;<span
+              typing-speed="70"
+              typing-delay="1000"
+              words="cool,dashing,easy to implement"
+            ></span>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <svg height="100%" width="800" id="circle_svg">
+      <circle
+        class="circle"
+        cx="400"
+        cy="400"
+        stroke="#231f20"
+        stroke-width="0"
+        fill-opacity="0"
+        fill="none"
+      />
+    </svg>
+
+    <div class="cover_photo_con">
+      <div class="cover_photo" onclick="showCircle()"></div>
+    </div>
+
+    <div class="main_menu" onclick="">
+      <div class="col">
+        <button class="invisible"></button>
+        <button onclick="showProjects()" class="bt_2">Projects</button>
+        <button onclick="showSkill()" class="bt_3">Skill</button>
+        <button class="invisible"></button>
+      </div>
+
+      <div class="col">
+        <button onclick="showAbout()" class="bt_1">About</button>
+        <button class="invisible"></button>
+        <button class="invisible"></button>
+        <button onclick="showRepos()" class="bt_4">GIT</button>
+      </div>
+
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+
+      <div class="col">
+        <button class="invisible"></button>
+        <button class="invisible"></button>
+        <button class="invisible"></button>
+        <button class="bt_5">
+          <a href="mailto:amirabbasyk@gmail.com" target="_blank">Mail</a>
+        </button>
+      </div>
+
+      <div class="col">
+        <button class="invisible"></button>
+        <button class="invisible"></button>
+        <button class="bt_6">
+          <a
+            target="_blank"
+            href="//api.whatsapp.com/send?phone=+916238474116&text=Hi. Amir Abbasy"
+            title="Share on whatsapp"
+            >Chat</a
+          >
+        </button>
+        <button class="invisible"></button>
+      </div>
+    </div>
+
+    <!-- PAGES -->
+    <ul class="section_about"></ul>
+    <ul class="section_skills"></ul>
+    <ul class="section_projects"></ul>
+    <ul class="section_repos"></ul>
+  </body>
+</html>
