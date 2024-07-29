@@ -3,7 +3,7 @@ function gotoHome(go = true) {
     ? "translate(-50%, -50%)"
     : "translate(-0%, -50%)";
   const coverPhotoLeft = go ? "50%" : "0%";
-  const coverPhotoBackground = go ? "./face_1.png" : "./face_2.png";
+  const coverPhotoBackground = go ? "./amir-abbasy-1.png" : "./amir-abbasy-2.png";
 
   $(".cover_photo")
     .addClass("transition-effect" + (go ? "-fast" : ""))
@@ -68,26 +68,26 @@ function showAbout(show = true) {
   gotoHome(!show);
   $(".section_about").css("display", "block");
 
-  fetch("./data.json").then(async (response) => {
-    var json = await response.json();
-    json.experience.reverse().forEach((exp) => {
-      var stacks = exp.stacks.map((stack) => `<span>${stack}</span>`);
-      $(".experience").append(`<div class="exp">
-      <p class="exp_date">${exp.time}</p>
-      <div class="exp_main">
-        <div class="content">
-          <p class="role">${exp.role}</p>
-          <h1 class="title">${exp.title}</h1>
-          <p class="desc">${exp.desc}
-          </p>
-          <div class="stacks">
-           ${stacks.join(' ')}
-          </div>
-        </div>
-      </div>
-    </div>`);
-    });
-  });
+  // fetch("./data.json").then(async (response) => {
+  //   var json = await response.json();
+  //   json.experience.reverse().forEach((exp) => {
+  //     var stacks = exp.stacks.map((stack) => `<span>${stack}</span>`);
+  //     $(".experience").append(`<div class="exp">
+  //     <p class="exp_date">${exp.time}</p>
+  //     <div class="exp_main">
+  //       <div class="content">
+  //         <p class="role">${exp.role}</p>
+  //         <h1 class="title">${exp.title}</h1>
+  //         <p class="desc">${exp.desc}
+  //         </p>
+  //         <div class="stacks">
+  //          ${stacks.join(' ')}
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>`);
+  //   });
+  // });
 
   // anime({
   //   targets: ".section_repos .repos_el",
@@ -103,13 +103,37 @@ function showAbout(show = true) {
 function showProjects(show = true) {
   gotoHome(!show);
   $(".section_projects").css("display", "block");
-  anime({
-    targets: ".section_projects .projects_el",
-    keyframes: [
-      { translateY: 400, opacity: 0 },
-      { translateY: -0, opacity: 1 },
-    ],
-    delay: anime.stagger(150),
+  // anime({
+  //   targets: ".section_projects .projects_el",
+  //   keyframes: [
+  //     { translateY: 400, opacity: 0 },
+  //     { translateY: -0, opacity: 1 },
+  //   ],
+  //   delay: anime.stagger(150),
+  // });
+
+
+  fetch("./data.json").then(async (response) => {
+    var json = await response.json();
+    json.experience.reverse().forEach((exp) => {
+      var stacks = exp.stacks.map((stack) => `<span>${stack}</span>`);
+      $(".section_projects").append(`<div class="exp">
+      <p class="exp_date">${exp.time}</p>
+      <div class="exp_main">
+        <div class="content">
+          <p class="role">${exp.role}</p>
+          <h1 class="title">${exp.title}</h1>
+          <p class="desc">${exp.desc}
+          </p>
+          <div class="stacks">
+           ${stacks.join(' ')}
+          </div>
+        </div>
+      </div>
+    </div>`);
+    });
+
+
   });
 }
 
@@ -142,29 +166,30 @@ $(document).ready(function () {
     });
 
     // skills
+    console.log({json});
     json.skills.forEach((skill) => {
       $(".section_skills").append(`<div class="skill_el">${skill}</div>`);
     });
 
- 
+
   });
 
-  // GIT REPOS
-  fetch("https://api.github.com/users/amir-abbasy/repos").then(
-    async (response) => {
-      var repos = await response.json();
-      // console.log(repos);
-      repos.forEach((repo) => {
-        $(".section_repos").append(`<li class="repos_el">
-          <div>
-          <a target="_blank" href="${repo.html_url}">${repo.name}</a>
-          <p class="des">${repo?.description ?? repo.html_url}</p>
-          </div>
-          <img src="https://cdn-icons-png.flaticon.com/128/4926/4926624.png" class="git_logo" />
-          </li>`);
-      });
-    }
-  );
+  // // GIT REPOS
+  // fetch("https://api.github.com/users/amir-abbasy/repos").then(
+  //   async (response) => {
+  //     var repos = await response.json();
+  //     // console.log(repos);
+  //     repos.forEach((repo) => {
+  //       $(".section_repos").append(`<li class="repos_el">
+  //         <div>
+  //         <a target="_blank" href="${repo.html_url}">${repo.name}</a>
+  //         <p class="des">${repo?.description ?? repo.html_url}</p>
+  //         </div>
+  //         <img src="https://cdn-icons-png.flaticon.com/128/4926/4926624.png" class="git_logo" />
+  //         </li>`);
+  //     });
+  //   }
+  // );
 
   const greetingMessage = getTimeGreeting();
   console.log(greetingMessage);

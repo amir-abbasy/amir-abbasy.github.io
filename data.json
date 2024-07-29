@@ -126,9 +126,9 @@
         },
         {
             "role": "Blockchain Developer",
-            "time": "FEB, 23",
-            "title": "NFT Marketplace Project",
-            "desc": "Created automated crypto trading bots to execute predefined strategies on various cryptocurrency exchanges. Developed algorithmic trading strategies based on technical analysis and market indicators. Integrated the bots with cryptocurrency exchange APIs to execute buy and sell orders. Conducted backtesting to validate the effectiveness of the trading strategies.",
+            "time": "FEB, 23-MAR, 24",
+            "title": "NFT Marketplace Projects (3)",
+            "desc": "Smart Contracts: Write and deploy smart contracts for minting, buying, selling, and transferring NFTs. Ensure they are secure and optimized. Develop APIs for user authentication, NFT listings, bidding mechanisms, and other backend functionalities, Develop interfaces for users to mint, list, and manage their NFTs. Build features for browsing, searching, filtering, and purchasing NFTs. Ensure the platform is responsive and works well on different devices and screen sizes",
             "stacks": [
                 "React.js",
                 "Solidity",
@@ -142,82 +142,26 @@
         },
         {
             "role": "Blockchain Developer",
-            "time": "MAY, 23",
-            "title": "NFT Marketplace Project",
-            "desc": "Created automated crypto trading bots to execute predefined strategies on various cryptocurrency exchanges. Developed algorithmic trading strategies based on technical analysis and market indicators. Integrated the bots with cryptocurrency exchange APIs to execute buy and sell orders. Conducted backtesting to validate the effectiveness of the trading strategies.",
+            "time": "APR, 24",
+            "title": "Initial Coin Offering (ICO)",
+            "desc": "Token Creation: Develop and deploy smart contracts for the token on a blockchain platform (typically Ethereum using ERC-20 standard). ICO Contract: Develop and deploy smart contracts for the ICO to manage token sale phases, pricing, and distribution. Create a professional website to present the project, including information about the ICO, whitepaper, roadmap, team, and contact details. Smart Contract Audits: Conduct thorough audits of the smart contracts to identify and fix any vulnerabilities",
             "stacks": [
                 "React.js",
                 "Solidity",
-                "Next.js",
                 "Node.js",
                 "Express.js",
-                "IPFS",
                 "Wagmi",
                 "Mongo DB"
             ]
         }
     ],
-    "projects": [
-        {
-            "name": "Jean",
-            "des": "NFT marketplace for client business logic",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "NFT Carbon War",
-            "des": "NFT marketplace for client business logic",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "Document Verification",
-            "des": "document verification system through blockchain technology for client business logic",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "NFT Marketplace Demo",
-            "des": "demo marketplace showcasing the creation, buying, and selling of digital assets on a blockchain",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "ID card scanning app",
-            "des": "ID card scanning app",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "Edumbus App",
-            "des": "Rental service app for students",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "MLM Mobile App",
-            "des": "Multi-level Marketing (MLM) Mobile App",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "DoCart",
-            "des": "E-store Mobile App",
-            "link": "",
-            "thumb": ""
-        },
-        {
-            "name": "Bisberry",
-            "des": "Product landing page",
-            "link": "https://bisberry.com/",
-            "thumb": ""
-        }
-    ],
+    "projects": [],
     "skills": [
         "Solidity ",
         "Web3 ",
         "React js ",
         "Node js ",
+        "Next js ",
         "Java Script ",
         "Python ",
         "Redux ",
